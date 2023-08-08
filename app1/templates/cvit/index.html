@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Personal info</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css'%}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="{% static 'images/avatar.jpg'%}" alt="" /></span>
+							<h1 id="title">Sekou S Kamara</h1>
+							<p>Python Developer and <br> Full Stack Web developer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="www.facebook.com/Sekou S Kader Kamara" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="www.github.com/Jxco114" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="www.gmail.com/kamarasekous22@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Sekou</strong>, <br>a python web developer 
+								</h2>
+								<p>I'm a full stack developer<br />
+								used Django and Flask as my backend framework</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Read More</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<p>I'm Sekou S Kamara a graduate from the great Afriktech Institute of Technology. I love coding
+								and Rallying on the Tennis Court. If you love Tennis as much as I do we can have a friendly match.
+							</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="{% static 'images/rally.jpg'%}" alt="" /></a>
+										<header>
+											<h3>Tennis Player</h3>
+											<p>Exercising on the court</p>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="{% static 'images/mobile.png'%}" alt="" /></a>
+										<header>
+											<h3>Repair Phones</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="{% static 'images/unlock.png'%}" alt="" /></a>
+										<header>
+											<h3>Flash and Decode Phones</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="{% static 'images/on me.jpg'%}" alt="" /></a>
+										<header>
+											<h3>A python developer</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="{% static 'images/data.png'%}" alt="" /></a>
+										<header>
+											<h3>Data Science</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="{% static 'images/ml.png'%}" alt="" /></a>
+										<header>
+											<h3>Machine learning</h3>
+
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+
+							<p>I am Sekou S Kamara, co-founder, web developer, and Software technician at JuicyTech. 
+								graduated of from Noah's Ark High School in 2016 and earn a certificate in web development at Afriktech Institute of 
+								Technology 2023.
+
+							</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>You can get in touch with me for the following if you need the following:
+								<ol class="ski">
+									<li>Build a website</li>
+									<li>Flash Phones</li>
+									<li>Carrier Unlock all Phones</li>
+									<li>Remove activation lock</li>
+								</ol>
+							</p>
+
+							<form method="post">
+								{% csrf_token %}
+								<div class="row">
+									<div class="col-6 col-12-mobile">{{ form }}</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+							
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js'%}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js'%}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js'%}"></script>
+			<script src="{% static 'assets/js/browser.min.js'%}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js'%}"></script>
+			<script src="{% static 'assets/js/util.js'%}"></script>
+			<script src="{% static 'assets/js/main.js'%}"></script>
+
+	</body>
+</html>
